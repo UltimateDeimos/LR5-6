@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "lr5-6"
+version = "0.1.0"
+description = ""
+authors = ["Ultimate_Deimos <egor.miloslavsky@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "lr5_6"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.3.2"
+flask-sqlalchemy = "^3.0.3"
+flask-migrate = "^4.0.4"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
