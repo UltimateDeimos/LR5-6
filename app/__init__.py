@@ -11,7 +11,6 @@ from app.models import Employee, Position, Division, Job
 app = Flask(__name__)
 app.debug = True
 app.config.from_object(Config)
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:1029@localhost:5432/lb5_6"
 
 db.init_app(app)
 migrate = Migrate(app, db)

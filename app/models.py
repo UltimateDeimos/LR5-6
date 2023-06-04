@@ -4,8 +4,9 @@ from app.db import db
 class BaseMixin(db.Model):
     __abstract__ = True
 
-    def __int__(self, **kwargs):
+    def __init__(self, **kwargs):
         self.__dict__.update(kwargs)
+
 
 class Employee(BaseMixin):
     __tablename__ = 'employees'
